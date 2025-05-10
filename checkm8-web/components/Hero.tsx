@@ -20,7 +20,7 @@ export default function Hero() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              Split Bills,<br />
+              Share Bills,<br />
               <span className="text-[var(--primary)]">Not Your Data</span>
             </h1>
             
@@ -78,12 +78,12 @@ export default function Hero() {
               <div className="phone-mockup transform rotate-3 relative z-20">
                 <div className="phone-screen">
                   <Image
-                    src="/opening.gif"
+                    src="/splash.png"
                     alt="Checkmate App"
                     width={290}
                     height={615}
                     priority
-                    className="object-contain h-full w-full gif-smooth"
+                    className="object-contain h-full w-full"
                   />
                 </div>
               </div>
