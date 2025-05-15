@@ -108,7 +108,7 @@ export default function Download() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              Join thousands of users who value both convenience and privacy. Checkmate is completely free and doesn&apos;t require any personal information.
+              Join our group of users who value both convenience and privacy. Checkmate is completely free and doesn&apos;t require any personal information.
             </p>
             
             <div 
