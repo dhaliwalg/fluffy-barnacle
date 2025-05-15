@@ -83,7 +83,15 @@ export default function Hero() {
                     width={290}
                     height={615}
                     priority
-                    className="object-contain h-full w-full"
+                    className="object-contain h-full w-full dark:hidden"
+                  />
+                  <Image
+                    src="/dark-splash.png"
+                    alt="Checkmate App"
+                    width={290}
+                    height={615}
+                    priority
+                    className="object-contain h-full w-full hidden dark:block"
                   />
                 </div>
               </div>

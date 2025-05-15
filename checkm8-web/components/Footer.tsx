@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 interface FooterLinkProps {
@@ -79,7 +80,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center mb-6">
-              <i className="fas fa-receipt text-[var(--primary)] mr-2 text-xl"></i>
+              <Image src="/logo.png" alt="Checkmate Logo" width={44} height={44} className="mr-2" />
               <span className="text-xl font-semibold text-[var(--accent)] dark:text-white">Checkmate</span>
             </Link>
             

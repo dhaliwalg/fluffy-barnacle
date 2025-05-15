@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +31,7 @@ export default function Header() {
     >
       <div className="container-custom flex justify-between items-center">
         <Link href="/" className="flex items-center text-[var(--accent)] dark:text-white font-semibold text-xl">
-          <i className="fas fa-receipt text-[var(--primary)] mr-2"></i>
+          <Image src="/logo.png" alt="Checkmate Logo" width={40} height={40} className="mr-2" />
           <span>Checkmate</span>
         </Link>
         
