@@ -62,7 +62,7 @@ export default function Footer() {
     {
       title: "Resources",
       links: [
-        { text: "Documentation", href: "https://github.com/LLRHook/checksinmyhead/tree/main/docs" },
+        { text: "Documentation", href: "https://github.com/LLRHook/checksinmyhead/blob/main/README.md" },
         { text: "Bug Reports", href: "https://github.com/LLRHook/checksinmyhead/issues" }
       ]
     },
