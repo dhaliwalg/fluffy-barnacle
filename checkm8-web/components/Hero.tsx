@@ -46,6 +46,27 @@ export default function Hero() {
             </div>
 
             <div 
+              className={`mt-8 transition-all duration-700 delay-250 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+              }`}
+            >
+              <a 
+                href="https://www.youtube.com/watch?v=T1GHR6JgOX8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="flex items-center gap-3 text-[var(--text-secondary)] hover:text-[var(--primary)] transition-colors text-sm">
+                  <div className="w-8 h-8 rounded-full bg-[var(--primary)]/10 group-hover:bg-[var(--primary)]/20 flex items-center justify-center transition-colors">
+                    <i className="fas fa-play text-[var(--primary)] text-xs"></i>
+                  </div>
+                  <span>3-minute app walkthrough</span>
+                  <i className="fas fa-arrow-right text-xs opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all"></i>
+                </div>
+              </a>
+            </div>
+
+            <div 
               className={`mt-12 grid grid-cols-3 gap-6 max-w-md transition-all duration-700 delay-300 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}

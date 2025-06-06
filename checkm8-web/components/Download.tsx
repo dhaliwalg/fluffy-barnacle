@@ -118,7 +118,7 @@ export default function Download() {
             >
               <DownloadButton
                 icon="fab fa-apple"
-                smallText="Download on the"
+                smallText="Soon on the"
                 bigText="App Store"
                 href="#"
                 delay={3}
