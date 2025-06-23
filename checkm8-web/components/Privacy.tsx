@@ -59,7 +59,7 @@ export default function Privacy() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
           >
-            In today&apos;s digital landscape, users have grown accustomed to trading their personal data for convenience. Checkmate was built on a fundamental belief: you shouldn&apos;t need to create an account to split a bill with friends.
+            In today&apos;s digital landscape, users have grown accustomed to trading their personal data for convenience. Spliq was built on a fundamental belief: you shouldn&apos;t need to create an account to split a bill with friends.
           </p>
         </div>
         
@@ -92,7 +92,7 @@ export default function Privacy() {
           <div>
             <h3 className="text-2xl font-bold mb-6">How We Protect Your Privacy</h3>
             <p className="text-white/80 mb-8">
-              Unlike most apps that require you to create an account and upload your data to their servers, Checkmate works entirely on your device. Your bill information, contacts, and history never leave your phone.
+              Unlike most apps that require you to create an account and upload your data to their servers, Spliq works entirely on your device. Your bill information, contacts, and history never leave your phone.
             </p>
             
             <div className="space-y-5">

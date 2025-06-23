@@ -31,8 +31,8 @@ export default function Header() {
     >
       <div className="container-custom flex justify-between items-center">
         <Link href="/" className="flex items-center text-[var(--accent)] dark:text-white font-semibold text-xl">
-          <Image src="/logo.png" alt="Checkmate Logo" width={40} height={40} className="mr-2" />
-          <span>Checkmate</span>
+          <Image src="/logo.png" alt="Spliq Logo" width={40} height={40} className="mr-2 rounded-lg" />
+          <span>Spliq</span>
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">

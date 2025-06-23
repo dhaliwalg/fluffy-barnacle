@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Checkmate - Share Bills, Not Your Data",
-  description: "Checkmate is an open source bill-splitting app that respects your privacy. No accounts, no cloud storage, just a simple way to divide expenses with friends.",
+  title: "Spliq - Share Bills, Not Your Data",
+  description: "Spliq is an open source bill-splitting app that respects your privacy. No accounts, no cloud storage, just a simple way to divide expenses with friends.",
   keywords: ["bill splitting", "privacy", "open source", "no accounts", "expense tracking"],
 };
 

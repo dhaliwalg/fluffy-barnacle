@@ -63,7 +63,7 @@ export default function Features() {
       id: 2,
       icon: "fas fa-user-slash",
       title: "No Accounts Required",
-      description: "Use Checkmate without creating an account. No email, no passwords, no personal data collection.",
+      description: "Use Spliq without creating an account. No email, no passwords, no personal data collection.",
       delay: 1
     },
     {
@@ -105,7 +105,7 @@ export default function Features() {
             Designed with privacy in mind
           </h2>
           <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg">
-            Every feature in Checkmate was built to protect your privacy while making bill-splitting simple.
+            Every feature in Spliq was built to protect your privacy while making bill-splitting simple.
           </p>
         </div>
         

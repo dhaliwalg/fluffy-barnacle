@@ -52,7 +52,7 @@ export default function Footer() {
   
   const columns: FooterColumnProps[] = [
     {
-      title: "Checkmate",
+      title: "Spliq",
       links: [
         { text: "Features", href: "#features" },
         { text: "Privacy", href: "#privacy" },
@@ -80,12 +80,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16">
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center mb-6">
-              <Image src="/logo.png" alt="Checkmate Logo" width={44} height={44} className="mr-2" />
-              <span className="text-xl font-semibold text-[var(--accent)] dark:text-white">Checkmate</span>
+              <Image src="/logo.png" alt="Spliq Logo" width={44} height={44} className="mr-2 rounded-lg" />
+              <span className="text-xl font-semibold text-[var(--accent)] dark:text-white">Spliq</span>
             </Link>
             
             <p className="text-[var(--text-secondary)] mb-6 max-w-md">
-              Checkmate is an open source, privacy-first bill-splitting app. All your data stays on your device, with no accounts required.
+              Spliq is an open source, privacy-first bill-splitting app. All your data stays on your device, with no accounts required.
             </p>
             
             <div className="flex space-x-5 mb-10">
@@ -100,7 +100,7 @@ export default function Footer() {
               </Link>
               
               <Link 
-                href="mailto:checkmateapp@duck.com" 
+                href="mailto:Spliqapp@duck.com" 
                 className="w-10 h-10 rounded-full bg-[var(--secondary)] flex items-center justify-center text-[var(--accent)] hover:bg-[var(--primary)] hover:text-white transition-colors"
                 aria-label="E-Mail"
               >

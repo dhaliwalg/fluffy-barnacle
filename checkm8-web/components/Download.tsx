@@ -100,7 +100,7 @@ export default function Download() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              Download Checkmate<br />today
+              Download Spliq<br />today
             </h2>
             
             <p 
@@ -108,29 +108,41 @@ export default function Download() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              Join our group of users who value both convenience and privacy. Checkmate is completely free and doesn&apos;t require any personal information.
+              Join our group of users who value both convenience and privacy. Spliq is completely free and doesn&apos;t require any personal information.
             </p>
             
             <div 
-              className={`space-y-4 md:space-y-0 md:flex md:space-x-4 transition-all duration-700 delay-200 ${
+              className={`transition-all duration-700 delay-200 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              <DownloadButton
-                icon="fab fa-apple"
-                smallText="Soon on the"
-                bigText="App Store"
-                href="#"
-                delay={3}
-              />
-              <DownloadButton
-                icon="fab fa-github"
-                smallText="View project on"
-                bigText="GitHub"
-                href="https://github.com/LLRHook/checksinmyhead"
-                delay={4}
-              />
+              {/* Top row with App Store and GitHub buttons */}
+              <div className="space-y-4 md:space-y-0 md:flex md:space-x-4 mb-4">
+                <DownloadButton
+                  icon="fab fa-apple"
+                  smallText="Download on"
+                  bigText="App Store"
+                  href="#"
+                  delay={3}
+                />
+                <DownloadButton
+                  icon="fab fa-github"
+                  smallText="View project"
+                  bigText="GitHub"
+                  href="https://github.com/LLRHook/checksinmyhead"
+                  delay={4}
+                />
+                <DownloadButton
+                  icon="fab fa-youtube"
+                  smallText="Watch demo"
+                  bigText="YouTube"
+                  href="https://youtube.com/shorts/T1GHR6JgOX8?feature=share"
+                  delay={5}
+                />
+              </div>
+
             </div>
+            
             
             <div 
               className={`mt-12 text-white/60 text-sm flex items-center transition-all duration-700 delay-300 ${
@@ -153,7 +165,7 @@ export default function Download() {
                 <div className="phone-screen">
                   <Image
                     src="/setup.png"
-                    alt="Checkmate App Setup"
+                    alt="Spliq App Setup"
                     width={290}
                     height={615}
                     className="object-contain h-full w-full gif-smooth"

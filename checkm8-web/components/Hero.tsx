@@ -29,7 +29,7 @@ export default function Hero() {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
               }`}
             >
-              Checkmate is an open source, privacy-first bill-splitting app. No accounts, no cloud storage, just a simple way to divide expenses with friends.
+              Spliq is an open source, privacy-first bill-splitting app. No accounts, no cloud storage, just a simple way to divide expenses with friends.
             </p>
             
             <div 
@@ -100,7 +100,7 @@ export default function Hero() {
                 <div className="phone-screen">
                   <Image
                     src="/splash.png"
-                    alt="Checkmate App"
+                    alt="Spliq App"
                     width={290}
                     height={615}
                     priority
@@ -108,7 +108,7 @@ export default function Hero() {
                   />
                   <Image
                     src="/dark-splash.png"
-                    alt="Checkmate App"
+                    alt="Spliq App"
                     width={290}
                     height={615}
                     priority
