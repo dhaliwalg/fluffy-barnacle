@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,33 +17,50 @@ export default function Header() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header 
+    <header
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'py-3 backdrop-blur-lg bg-white/80 dark:bg-black/80 shadow-sm' 
-          : 'py-5 bg-transparent'
+        isScrolled
+          ? "py-3 backdrop-blur-lg bg-white/80 dark:bg-black/80 shadow-sm"
+          : "py-5 bg-transparent"
       }`}
     >
       <div className="container-custom flex justify-between items-center">
-        <Link href="/" className="flex items-center text-[var(--accent)] dark:text-white font-semibold text-xl">
-          <Image src="/logo.png" alt="Spliq Logo" width={40} height={40} className="mr-2 rounded-lg" />
+        <Link
+          href="/"
+          className="flex items-center text-[var(--accent)] dark:text-white font-semibold text-xl"
+        >
+          <Image
+            src="/logo.png"
+            alt="Spliq Logo"
+            width={40}
+            height={40}
+            className="mr-2 rounded-lg"
+          />
           <span>Spliq</span>
         </Link>
-        
+
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="header-link text-sm font-medium">Features</a>
-          <a href="#privacy" className="header-link text-sm font-medium">Privacy</a>
-          <a href="#how-it-works" className="header-link text-sm font-medium">How It Works</a>
-          <a href="#download" className="btn-primary text-xs py-2.5 px-5">Download</a>
+          <a href="#features" className="header-link text-sm font-medium">
+            Features
+          </a>
+          <a href="#privacy" className="header-link text-sm font-medium">
+            Privacy
+          </a>
+          <a href="#how-it-works" className="header-link text-sm font-medium">
+            How It Works
+          </a>
+          <a href="#download" className="btn-primary text-xs py-2.5 px-5">
+            Download
+          </a>
         </nav>
-        
+
         <div className="md:hidden">
-          <button 
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-[var(--accent)] dark:text-white text-xl focus:outline-none"
             aria-label="Toggle menu"
@@ -52,21 +69,37 @@ export default function Header() {
           </button>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full backdrop-blur-xl bg-white/90 dark:bg-black/90 shadow-lg py-6 px-6 animated">
           <nav className="flex flex-col space-y-6">
-            <a href="#features" onClick={() => setIsMenuOpen(false)} className="text-[var(--accent)] dark:text-white font-medium block py-2">
+            <a
+              href="#features"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[var(--accent)] dark:text-white font-medium block py-2"
+            >
               Features
             </a>
-            <a href="#privacy" onClick={() => setIsMenuOpen(false)} className="text-[var(--accent)] dark:text-white font-medium block py-2">
+            <a
+              href="#privacy"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[var(--accent)] dark:text-white font-medium block py-2"
+            >
               Privacy
             </a>
-            <a href="#how-it-works" onClick={() => setIsMenuOpen(false)} className="text-[var(--accent)] dark:text-white font-medium block py-2">
+            <a
+              href="#how-it-works"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[var(--accent)] dark:text-white font-medium block py-2"
+            >
               How It Works
             </a>
-            <a href="#download" onClick={() => setIsMenuOpen(false)} className="btn-primary inline-block text-center">
+            <a
+              href="#download"
+              onClick={() => setIsMenuOpen(false)}
+              className="btn-primary inline-block text-center"
+            >
               Download
             </a>
           </nav>

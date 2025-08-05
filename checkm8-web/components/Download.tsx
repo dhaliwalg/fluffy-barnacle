@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useEffect, useState, useRef } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useEffect, useState, useRef } from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 interface DownloadButtonProps {
   icon: string;
@@ -12,7 +12,13 @@ interface DownloadButtonProps {
   delay: number;
 }
 
-function DownloadButton({ icon, smallText, bigText, href, delay }: DownloadButtonProps) {
+function DownloadButton({
+  icon,
+  smallText,
+  bigText,
+  href,
+  delay,
+}: DownloadButtonProps) {
   const [isVisible, setIsVisible] = useState(false);
   const buttonRef = useRef<HTMLAnchorElement>(null);
 
@@ -24,7 +30,7 @@ function DownloadButton({ icon, smallText, bigText, href, delay }: DownloadButto
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (buttonRef.current) {
@@ -37,11 +43,11 @@ function DownloadButton({ icon, smallText, bigText, href, delay }: DownloadButto
   }, []);
 
   return (
-    <Link 
+    <Link
       href={href}
       ref={buttonRef}
       className={`flex items-center bg-white dark:bg-[var(--accent)] hover:bg-[var(--secondary)] dark:hover:bg-black text-[var(--accent)] dark:text-white px-6 py-4 rounded-xl transition-all duration-700 shadow-lg hover:shadow-xl ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
       }`}
       style={{ transitionDelay: `${delay * 100}ms` }}
       target="_blank"
@@ -49,7 +55,9 @@ function DownloadButton({ icon, smallText, bigText, href, delay }: DownloadButto
     >
       <i className={`${icon} text-3xl text-[var(--primary)] mr-4`}></i>
       <div className="flex flex-col">
-        <span className="text-xs text-[var(--text-secondary)]">{smallText}</span>
+        <span className="text-xs text-[var(--text-secondary)]">
+          {smallText}
+        </span>
         <span className="text-lg font-semibold">{bigText}</span>
       </div>
     </Link>
@@ -68,7 +76,7 @@ export default function Download() {
           observer.disconnect();
         }
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     if (sectionRef.current) {
@@ -81,8 +89,8 @@ export default function Download() {
   }, []);
 
   return (
-    <section 
-      id="download" 
+    <section
+      id="download"
       ref={sectionRef}
       className="py-24 md:py-32 gradient-bg text-white relative overflow-hidden"
     >
@@ -90,30 +98,40 @@ export default function Download() {
       <div className="absolute top-0 left-0 w-full h-full dot-pattern"></div>
       <div className="absolute -top-40 -right-40 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
-      
+
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-white/80 font-medium mb-3">GET STARTED</p>
-            <h2 
+            <h2
               className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
             >
-              Download Spliq<br />today
+              Download Spliq
+              <br />
+              today
             </h2>
-            
-            <p 
+
+            <p
               className={`text-white/80 max-w-xl text-lg mb-10 transition-all duration-700 delay-100 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
             >
-              Join our group of users who value both convenience and privacy. Spliq is completely free and doesn&apos;t require any personal information.
+              Join our group of users who value both convenience and privacy.
+              Spliq is completely free and doesn&apos;t require any personal
+              information.
             </p>
-            
-            <div 
+
+            <div
               className={`transition-all duration-700 delay-200 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
             >
               {/* Top row with App Store and GitHub buttons */}
@@ -140,23 +158,27 @@ export default function Download() {
                   delay={5}
                 />
               </div>
-
             </div>
-            
-            
-            <div 
+
+            <div
               className={`mt-12 text-white/60 text-sm flex items-center transition-all duration-700 delay-300 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
             >
               <i className="fas fa-lock mr-2"></i>
-              <span>Your privacy is guaranteed - no data leaves your device</span>
+              <span>
+                Your privacy is guaranteed - no data leaves your device
+              </span>
             </div>
           </div>
-          
-          <div 
+
+          <div
             className={`hidden lg:flex justify-center items-center transition-all duration-1000 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-12"
             }`}
           >
             <div className="relative">
