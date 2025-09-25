@@ -2,12 +2,12 @@
 
 :root {
   /* New refined color palette */
-  --primary: #0a84ff;
-  --primary-dark: #0071e3;
-  --primary-light: #42a5ff;
+  --primary: #328983;
+  --primary-dark: #309A93FF;
+  --primary-light: #328983;
   --secondary: #f5f5f7;
   --accent: #1d1d1f;
-  --light-bg: #ffffff;
+  --light-bg: #FFFFFFFF;
   --dark-bg: #000000;
   --text-dark: #1d1d1f;
   --text-light: #f5f5f7;

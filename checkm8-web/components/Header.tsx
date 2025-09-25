@@ -36,12 +36,12 @@ export default function Header() {
         >
           <Image
             src="/logo.png"
-            alt="Spliq Logo"
+            alt="Billington Logo"
             width={40}
             height={40}
             className="mr-2 rounded-lg"
           />
-          <span>Spliq</span>
+          <span>Billington</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">

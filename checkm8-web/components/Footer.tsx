@@ -54,7 +54,7 @@ export default function Footer() {
 
   const columns: FooterColumnProps[] = [
     {
-      title: "Spliq",
+      title: "Billington",
       links: [
         { text: "Features", href: "#features" },
         { text: "Privacy", href: "#privacy" },
@@ -94,18 +94,18 @@ export default function Footer() {
             <Link href="/" className="flex items-center mb-6">
               <Image
                 src="/logo.png"
-                alt="Spliq Logo"
+                alt="Billington Logo"
                 width={44}
                 height={44}
                 className="mr-2 rounded-lg"
               />
               <span className="text-xl font-semibold text-[var(--accent)] dark:text-white">
-                Spliq
+                Billington
               </span>
             </Link>
 
             <p className="text-[var(--text-secondary)] mb-6 max-w-md">
-              Spliq is an open source, privacy-first bill-splitting app. All
+              Billington is an open source, privacy-first bill-splitting app. All
               your data stays on your device, with no accounts required.
             </p>
 
@@ -121,7 +121,7 @@ export default function Footer() {
               </Link>
 
               <Link
-                href="mailto:Spliqapp@duck.com"
+                href="mailto:Billingtonapp@duck.com"
                 className="w-10 h-10 rounded-full bg-[var(--secondary)] flex items-center justify-center text-[var(--accent)] hover:bg-[var(--primary)] hover:text-white transition-colors"
                 aria-label="E-Mail"
               >

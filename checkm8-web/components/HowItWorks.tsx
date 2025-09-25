@@ -163,7 +163,7 @@ export default function HowItWorks() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Spliq makes it easy to divide expenses fairly, with a simple
+              Billington makes it easy to divide expenses fairly, with a simple
               four-step process that respects your privacy at every stage.
             </p>
 
@@ -202,7 +202,7 @@ export default function HowItWorks() {
                   <div className="phone-screen">
                     <Image
                       src={steps[currentStep - 1].imageSrc}
-                      alt={`Spliq App - ${steps[currentStep - 1].title}`}
+                      alt={`Billington App - ${steps[currentStep - 1].title}`}
                       width={290}
                       height={615}
                       className="object-contain h-full w-full gif-smooth"

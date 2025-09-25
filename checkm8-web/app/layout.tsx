@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Spliq - Share Bills, Not Your Data",
+  title: "Billington - Split the Bill, Keep the Secrets",
   description:
-    "Spliq is an open source bill-splitting app that respects your privacy. No accounts, no cloud storage, just a simple way to divide expenses with friends.",
+    "Billington is an open source bill-splitting app that respects your privacy. No accounts, no cloud storage, just a simple way to divide expenses with friends.",
   keywords: [
     "bill splitting",
     "privacy",

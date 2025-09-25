@@ -57,7 +57,7 @@ export default function PrivacyPolicy() {
                     Zero Data Collection
                   </h2>
                   <p className="text-white/80">
-                    Spliq doesn&apos;t collect, store, or transmit any personal
+                    Billington doesn&apos;t collect, store, or transmit any personal
                     data. Period.
                   </p>
                 </div>
@@ -94,15 +94,15 @@ export default function PrivacyPolicy() {
                 }`}
               >
                 <h2 className="text-2xl font-bold mb-4 text-[var(--accent)] dark:text-white">
-                  About Spliq
+                  About Billington
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
-                  Spliq is a bill-splitting application developed by Kruski Ko.
+                  Billington is a bill-splitting application developed by Kruski Ko.
                   The app is designed to help users divide restaurant bills and
                   expenses among friends while maintaining complete privacy.
                 </p>
                 <p className="text-[var(--text-secondary)]">
-                  This privacy policy explains our data practices for the Spliq
+                  This privacy policy explains our data practices for the Billington
                   iOS application and this website.
                 </p>
               </section>
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
                     What We DO Collect
                   </h3>
                   <p className="text-green-700 dark:text-green-300 text-lg font-medium">
-                    Absolutely nothing. Spliq operates entirely offline.
+                    Absolutely nothing. Billington operates entirely offline.
                   </p>
                 </div>
               </section>
@@ -214,7 +214,7 @@ export default function PrivacyPolicy() {
                 </h2>
                 <div className="bg-[var(--secondary)] dark:bg-[#202022] rounded-2xl p-6">
                   <p className="text-[var(--text-secondary)] mb-4">
-                    Spliq does not integrate with any third-party services,
+                    Billington does not integrate with any third-party services,
                     analytics platforms, or advertising networks. The app
                     operates in complete isolation.
                   </p>
@@ -239,7 +239,7 @@ export default function PrivacyPolicy() {
                   Device Permissions
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
-                  Spliq requests minimal device permissions:
+                  Billington requests minimal device permissions:
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-start">
@@ -274,7 +274,7 @@ export default function PrivacyPolicy() {
                   Children&apos;s Privacy (COPPA Compliance)
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
-                  Since Spliq collects no personal information whatsoever, it is
+                  Since Billington collects no personal information whatsoever, it is
                   inherently compliant with the Children&apos;s Online Privacy
                   Protection Act (COPPA). The app can be safely used by children
                   under 13 without parental consent requirements.
@@ -298,7 +298,7 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
                   Under various privacy laws (GDPR, CCPA, etc.), you typically
-                  have rights regarding your personal data. However, since Spliq
+                  have rights regarding your personal data. However, since Billington
                   collects no personal data:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -401,15 +401,15 @@ export default function PrivacyPolicy() {
                 <div className="bg-[var(--secondary)] dark:bg-[#202022] rounded-2xl p-6">
                   <p className="text-[var(--text-secondary)] mb-4">
                     If you have any questions about this privacy policy or
-                    Spliq&apos;s privacy practices, please contact us:
+                    Billington&apos;s privacy practices, please contact us:
                   </p>
                   <div className="flex items-center">
                     <i className="fas fa-envelope text-[var(--primary)] mr-3"></i>
                     <a
-                      href="mailto:Spliqapp@duck.com"
+                      href="mailto:Billingtonapp@duck.com"
                       className="text-[var(--primary)] hover:underline"
                     >
-                      spliqapp@duck.com
+                      Billingtonapp@duck.com
                     </a>
                   </div>
                 </div>

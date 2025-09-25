@@ -5,10 +5,61 @@ import Image from "next/image";
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
+  
+  // Animation values
+  const [accounts, setAccounts] = useState(47293);
+  const [cloudStorage, setCloudStorage] = useState(156.7);
+  const [privacy, setPrivacy] = useState(12);
 
   useEffect(() => {
     setIsVisible(true);
+    
+    // Smooth countdown animation using requestAnimationFrame
+    const startTime = Date.now();
+    const duration = 4000; // 4 seconds total
+    
+    const animate = () => {
+      const elapsed = Date.now() - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      
+      // Eased progress for smooth animation
+      const easeProgress = 1 - Math.pow(1 - progress, 3);
+      
+      // Animate accounts from 47293 to 0
+      const newAccounts = Math.floor(47293 * (1 - easeProgress));
+      setAccounts(Math.max(0, newAccounts));
+      
+      // Animate cloud storage from 156.7 to 0
+      const newCloudStorage = 156.7 * (1 - easeProgress);
+      setCloudStorage(Math.max(0, newCloudStorage));
+      
+      // Animate privacy from 12 to 100
+      const newPrivacy = 12 + (88 * easeProgress);
+      setPrivacy(Math.min(100, newPrivacy));
+      
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+    
+    // Start animation after 1 second delay
+    const timer = setTimeout(() => {
+      animate();
+    }, 1000);
+    
+    return () => clearTimeout(timer);
   }, []);
+
+  // Format numbers nicely
+  const formatAccounts = (num: number) => {
+    if (num === 0) return "0";
+    return num.toLocaleString();
+  };
+
+  const formatStorage = (num: number) => {
+    if (num === 0) return "0";
+    return num.toFixed(1);
+  };
 
   return (
     <section className="pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
@@ -22,9 +73,9 @@ export default function Hero() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Share Bills,
+              Split the Bill,
               <br />
-              <span className="text-[var(--primary)]">Not Your Data</span>
+              <span className="text-[var(--primary)]">Keep the Secrets</span>
             </h1>
 
             <p
@@ -34,9 +85,7 @@ export default function Hero() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Spliq is an open source, privacy-first bill-splitting app. No
-              accounts, no cloud storage, just a simple way to divide expenses
-              with friends.
+              Billington splits bills without the bullsh*t. No accounts, no cloud data store, just fair shares for everyone.
             </p>
 
             <div
@@ -47,10 +96,10 @@ export default function Hero() {
               }`}
             >
               <a href="#download" className="btn-primary">
-                Download Now
+                Get Billington
               </a>
               <a href="#features" className="btn-outline">
-                Learn More
+                See How It Works
               </a>
             </div>
 
@@ -85,8 +134,10 @@ export default function Hero() {
               }`}
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-[var(--primary)]">
-                  0
+                <div className={`text-2xl font-bold transition-all duration-500 ${
+                  accounts === 0 ? "text-[var(--primary)]" : "text-red-500"
+                }`}>
+                  {formatAccounts(accounts)}
                 </div>
                 <div className="text-xs text-[var(--text-secondary)] mt-1">
                   Accounts
@@ -95,8 +146,11 @@ export default function Hero() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[var(--primary)]">
-                  0
+                <div className={`text-2xl font-bold transition-all duration-500 ${
+                  cloudStorage === 0 ? "text-[var(--primary)]" : "text-red-500"
+                }`}>
+                  {formatStorage(cloudStorage)}
+                  {cloudStorage > 0 && <span className="text-sm">GB</span>}
                 </div>
                 <div className="text-xs text-[var(--text-secondary)] mt-1">
                   Cloud
@@ -105,8 +159,10 @@ export default function Hero() {
                 </div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-bold text-[var(--primary)]">
-                  100%
+                <div className={`text-2xl font-bold transition-all duration-500 ${
+                  privacy === 100 ? "text-[var(--primary)]" : "text-orange-500"
+                }`}>
+                  {Math.round(privacy)}%
                 </div>
                 <div className="text-xs text-[var(--text-secondary)] mt-1">
                   Privacy
@@ -131,7 +187,7 @@ export default function Hero() {
                 <div className="phone-screen">
                   <Image
                     src="/splash.png"
-                    alt="Spliq App"
+                    alt="Billington App"
                     width={290}
                     height={615}
                     priority
@@ -139,7 +195,7 @@ export default function Hero() {
                   />
                   <Image
                     src="/dark-splash.png"
-                    alt="Spliq App"
+                    alt="Billington App"
                     width={290}
                     height={615}
                     priority

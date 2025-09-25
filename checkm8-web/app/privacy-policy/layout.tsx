@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Spliq",
+  title: "Privacy Policy - Billington",
   description:
-    "Spliq's privacy policy: We collect zero data. Your bill-splitting information stays completely private on your device with no cloud storage or tracking.",
+    "Billington's privacy policy: We collect zero data. Your bill-splitting information stays completely private on your device with no cloud storage or tracking.",
   keywords: [
     "privacy policy",
     "data protection",
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
     "GDPR compliant",
   ],
   openGraph: {
-    title: "Privacy Policy - Spliq",
+    title: "Privacy Policy - Billington",
     description:
-      "Zero data collection. Complete privacy. Learn about Spliq's privacy-first approach to bill splitting.",
+      "Zero data collection. Complete privacy. Learn about Billington's privacy-first approach to bill splitting.",
     type: "website",
   },
 };

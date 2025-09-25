@@ -28,7 +28,7 @@ export default function Privacy() {
 
   const guarantees = [
     { text: "No Data Collection", icon: "fa-ban" },
-    { text: "Zero Cloud Storage", icon: "fa-cloud" },
+    { text: "Your Data Stays Put", icon: "fa-cloud" },
     { text: "No Account Required", icon: "fa-user-slash" },
     { text: "No Tracking", icon: "fa-location-dot" },
   ];
@@ -66,7 +66,7 @@ export default function Privacy() {
             }`}
           >
             In today&apos;s digital landscape, users have grown accustomed to
-            trading their personal data for convenience. Spliq was built on a
+            trading their personal data for convenience. Billington was built on a
             fundamental belief: you shouldn&apos;t need to create an account to
             split a bill with friends.
           </p>
@@ -107,7 +107,7 @@ export default function Privacy() {
             </h3>
             <p className="text-white/80 mb-8">
               Unlike most apps that require you to create an account and upload
-              your data to their servers, Spliq works entirely on your device.
+              your data to their servers, Billington works entirely on your device.
               Your bill information, contacts, and history never leave your
               phone.
             </p>

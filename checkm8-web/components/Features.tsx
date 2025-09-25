@@ -59,7 +59,7 @@ export default function Features() {
     {
       id: 1,
       icon: "fas fa-shield-alt",
-      title: "Zero Cloud Storage",
+      title: "Your Data Stays Put",
       description:
         "Your data never leaves your device. We don't store your information in the cloud, so there's nothing to leak or sell.",
       delay: 0,
@@ -67,15 +67,15 @@ export default function Features() {
     {
       id: 2,
       icon: "fas fa-user-slash",
-      title: "No Accounts Required",
+      title: "Skip the Sign-Up",
       description:
-        "Use Spliq without creating an account. No email, no passwords, no personal data collection.",
+        "Use Billington without creating an account. No email, no passwords, no personal data collection.",
       delay: 1,
     },
     {
       id: 3,
       icon: "fas fa-calculator",
-      title: "Fair Split Calculations",
+      title: "Simple Math That Works",
       description:
         "Split bills proportionally based on what each person ordered, including tax and tip distribution.",
       delay: 2,
@@ -118,7 +118,7 @@ export default function Features() {
             Designed with privacy in mind
           </h2>
           <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg">
-            Every feature in Spliq was built to protect your privacy while
+            Every feature in Billington was built to protect your privacy while
             making bill-splitting simple.
           </p>
         </div>
