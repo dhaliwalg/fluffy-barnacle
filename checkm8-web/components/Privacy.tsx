@@ -66,9 +66,9 @@ export default function Privacy() {
             }`}
           >
             In today&apos;s digital landscape, users have grown accustomed to
-            trading their personal data for convenience. Billington was built on a
-            fundamental belief: you shouldn&apos;t need to create an account to
-            split a bill with friends.
+            trading their personal data for convenience. Billington was built on
+            a fundamental belief: you shouldn&apos;t need to create an account
+            to split a bill with friends.
           </p>
         </div>
 
@@ -107,9 +107,9 @@ export default function Privacy() {
             </h3>
             <p className="text-white/80 mb-8">
               Unlike most apps that require you to create an account and upload
-              your data to their servers, Billington works entirely on your device.
-              Your bill information, contacts, and history never leave your
-              phone.
+              your data to their servers, Billington works entirely on your
+              device. Your bill information, contacts, and history never leave
+              your phone.
             </p>
 
             <div className="space-y-5">

@@ -57,8 +57,8 @@ export default function PrivacyPolicy() {
                     Zero Data Collection
                   </h2>
                   <p className="text-white/80">
-                    Billington doesn&apos;t collect, store, or transmit any personal
-                    data. Period.
+                    Billington doesn&apos;t collect, store, or transmit any
+                    personal data. Period.
                   </p>
                 </div>
               </div>
@@ -97,13 +97,13 @@ export default function PrivacyPolicy() {
                   About Billington
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
-                  Billington is a bill-splitting application developed by Kruski Ko.
-                  The app is designed to help users divide restaurant bills and
-                  expenses among friends while maintaining complete privacy.
+                  Billington is a bill-splitting application developed by Kruski
+                  Ko. The app is designed to help users divide restaurant bills
+                  and expenses among friends while maintaining complete privacy.
                 </p>
                 <p className="text-[var(--text-secondary)]">
-                  This privacy policy explains our data practices for the Billington
-                  iOS application and this website.
+                  This privacy policy explains our data practices for the
+                  Billington iOS application and this website.
                 </p>
               </section>
 
@@ -274,10 +274,10 @@ export default function PrivacyPolicy() {
                   Children&apos;s Privacy (COPPA Compliance)
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
-                  Since Billington collects no personal information whatsoever, it is
-                  inherently compliant with the Children&apos;s Online Privacy
-                  Protection Act (COPPA). The app can be safely used by children
-                  under 13 without parental consent requirements.
+                  Since Billington collects no personal information whatsoever,
+                  it is inherently compliant with the Children&apos;s Online
+                  Privacy Protection Act (COPPA). The app can be safely used by
+                  children under 13 without parental consent requirements.
                 </p>
                 <p className="text-[var(--text-secondary)]">
                   We do not knowingly collect any information from children or
@@ -298,8 +298,8 @@ export default function PrivacyPolicy() {
                 </h2>
                 <p className="text-[var(--text-secondary)] mb-4">
                   Under various privacy laws (GDPR, CCPA, etc.), you typically
-                  have rights regarding your personal data. However, since Billington
-                  collects no personal data:
+                  have rights regarding your personal data. However, since
+                  Billington collects no personal data:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="flex items-center">

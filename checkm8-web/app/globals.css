@@ -3,11 +3,11 @@
 :root {
   /* New refined color palette */
   --primary: #328983;
-  --primary-dark: #309A93FF;
+  --primary-dark: #309a93ff;
   --primary-light: #328983;
   --secondary: #f5f5f7;
   --accent: #1d1d1f;
-  --light-bg: #FFFFFFFF;
+  --light-bg: #ffffffff;
   --dark-bg: #000000;
   --text-dark: #1d1d1f;
   --text-light: #f5f5f7;

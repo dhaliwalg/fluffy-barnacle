@@ -92,8 +92,7 @@ export default function Download() {
     <section
       id="download"
       ref={sectionRef}
-className="py-24 md:py-32 bg-[var(--primary)] text-white relative overflow-hidden"
-
+      className="py-24 md:py-32 bg-[var(--primary)] text-white relative overflow-hidden"
     >
       {/* Background decorations */}
       <div className="absolute top-0 left-0 w-full h-full dot-pattern"></div>
@@ -104,29 +103,29 @@ className="py-24 md:py-32 bg-[var(--primary)] text-white relative overflow-hidde
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <p className="text-white/80 font-medium mb-3">GET STARTED</p>
-<h2
-  className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 transition-all duration-700 ${
-    isVisible
-      ? "opacity-100 translate-y-0"
-      : "opacity-0 translate-y-12"
-  }`}
->
-  Download Billington
-  <br />
-  today
-</h2>
+            <h2
+              className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-6 transition-all duration-700 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
+              }`}
+            >
+              Download Billington
+              <br />
+              today
+            </h2>
 
-<p
-  className={`text-white/80 max-w-xl text-lg mb-10 transition-all duration-700 delay-100 ${
-    isVisible
-      ? "opacity-100 translate-y-0"
-      : "opacity-0 translate-y-12"
-  }`}
->
-              Join our users who value both convenience and privacy.
-              Billington is completely free and doesn&apos;t require any personal
+            <p
+              className={`text-white/80 max-w-xl text-lg mb-10 transition-all duration-700 delay-100 ${
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
+              }`}
+            >
+              Join our users who value both convenience and privacy. Billington
+              is completely free and doesn&apos;t require any personal
               information.
-</p>
+            </p>
 
             <div
               className={`transition-all duration-700 delay-200 ${

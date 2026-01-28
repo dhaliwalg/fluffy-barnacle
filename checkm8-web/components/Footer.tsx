@@ -90,10 +90,9 @@ export default function Footer() {
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8 mb-16">
           <div className="lg:col-span-2">
-
             <p className="text-[var(--text-secondary)] mb-6 max-w-md">
-              Billington is an open source, privacy-first bill-splitting app. All
-              your data stays on your device, with no accounts required.
+              Billington is an open source, privacy-first bill-splitting app.
+              All your data stays on your device, with no accounts required.
             </p>
 
             <div className="flex space-x-5 mb-10">
