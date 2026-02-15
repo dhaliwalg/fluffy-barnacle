@@ -122,8 +122,8 @@ export default function Download() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Join our users who value both convenience and privacy. Billington
-              is completely free and doesn&apos;t require any personal
+              Start scanning receipts and splitting bills in under a minute.
+              Billington is free, open source, and requires zero personal
               information.
             </p>
 

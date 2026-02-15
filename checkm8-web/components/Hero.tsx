@@ -6,60 +6,9 @@ import Image from "next/image";
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Animation values
-  const [accounts, setAccounts] = useState(47293);
-  const [cloudStorage, setCloudStorage] = useState(156.7);
-  const [privacy, setPrivacy] = useState(12);
-
   useEffect(() => {
     setIsVisible(true);
-
-    // Smooth countdown animation using requestAnimationFrame
-    const startTime = Date.now();
-    const duration = 4000; // 4 seconds total
-
-    const animate = () => {
-      const elapsed = Date.now() - startTime;
-      const progress = Math.min(elapsed / duration, 1);
-
-      // Eased progress for smooth animation
-      const easeProgress = 1 - Math.pow(1 - progress, 3);
-
-      // Animate accounts from 47293 to 0
-      const newAccounts = Math.floor(47293 * (1 - easeProgress));
-      setAccounts(Math.max(0, newAccounts));
-
-      // Animate cloud storage from 156.7 to 0
-      const newCloudStorage = 156.7 * (1 - easeProgress);
-      setCloudStorage(Math.max(0, newCloudStorage));
-
-      // Animate privacy from 12 to 100
-      const newPrivacy = 12 + 88 * easeProgress;
-      setPrivacy(Math.min(100, newPrivacy));
-
-      if (progress < 1) {
-        requestAnimationFrame(animate);
-      }
-    };
-
-    // Start animation after 1 second delay
-    const timer = setTimeout(() => {
-      animate();
-    }, 1000);
-
-    return () => clearTimeout(timer);
   }, []);
-
-  // Format numbers nicely
-  const formatAccounts = (num: number) => {
-    if (num === 0) return "0";
-    return num.toLocaleString();
-  };
-
-  const formatStorage = (num: number) => {
-    if (num === 0) return "0";
-    return num.toFixed(1);
-  };
 
   return (
     <section className="pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
@@ -73,9 +22,9 @@ export default function Hero() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Split the Bill,
+              Scan. Split.
               <br />
-              <span className="text-[var(--primary)]">Keep the Secrets</span>
+              <span className="text-[var(--primary)]">Settle.</span>
             </h1>
 
             <p
@@ -85,8 +34,9 @@ export default function Hero() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Billington splits bills without the bullsh*t. No accounts, no
-              cloud data store, just fair shares for everyone.
+              Snap a photo of your receipt, split items across your group, and
+              settle up through Venmo or Zelle — all without creating an
+              account.
             </p>
 
             <div
@@ -97,9 +47,9 @@ export default function Hero() {
               }`}
             >
               <a href="#download" className="btn-primary">
-                Get Billington
+                Download Free on iOS
               </a>
-              <a href="#features" className="btn-outline">
+              <a href="#how-it-works" className="btn-outline">
                 See How It Works
               </a>
             </div>
@@ -128,58 +78,35 @@ export default function Hero() {
             </div>
 
             <div
-              className={`mt-12 grid grid-cols-3 gap-6 max-w-md transition-all duration-700 delay-300 ${
+              className={`mt-12 flex flex-wrap gap-6 max-w-md transition-all duration-700 delay-300 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-12"
               }`}
             >
-              <div className="text-center">
-                <div
-                  className={`text-2xl font-bold transition-all duration-500 ${
-                    accounts === 0 ? "text-[var(--primary)]" : "text-red-500"
-                  }`}
-                >
-                  {formatAccounts(accounts)}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center">
+                  <i className="fas fa-camera text-[var(--primary)]"></i>
                 </div>
-                <div className="text-xs text-[var(--text-secondary)] mt-1">
-                  Accounts
-                  <br />
-                  Required
-                </div>
+                <span className="text-sm font-medium text-[var(--accent)] dark:text-white">
+                  Receipt OCR
+                </span>
               </div>
-              <div className="text-center">
-                <div
-                  className={`text-2xl font-bold transition-all duration-500 ${
-                    cloudStorage === 0
-                      ? "text-[var(--primary)]"
-                      : "text-red-500"
-                  }`}
-                >
-                  {formatStorage(cloudStorage)}
-                  {cloudStorage > 0 && <span className="text-sm">GB</span>}
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center">
+                  <i className="fas fa-folder-open text-[var(--primary)]"></i>
                 </div>
-                <div className="text-xs text-[var(--text-secondary)] mt-1">
-                  Cloud
-                  <br />
-                  Storage
-                </div>
+                <span className="text-sm font-medium text-[var(--accent)] dark:text-white">
+                  Group Trips
+                </span>
               </div>
-              <div className="text-center">
-                <div
-                  className={`text-2xl font-bold transition-all duration-500 ${
-                    privacy === 100
-                      ? "text-[var(--primary)]"
-                      : "text-orange-500"
-                  }`}
-                >
-                  {Math.round(privacy)}%
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-[var(--primary)]/10 rounded-full flex items-center justify-center">
+                  <i className="fas fa-shield-alt text-[var(--primary)]"></i>
                 </div>
-                <div className="text-xs text-[var(--text-secondary)] mt-1">
-                  Privacy
-                  <br />
-                  Focused
-                </div>
+                <span className="text-sm font-medium text-[var(--accent)] dark:text-white">
+                  100% Private
+                </span>
               </div>
             </div>
           </div>
@@ -219,18 +146,18 @@ export default function Hero() {
               <div className="absolute top-16 -left-16 z-30">
                 <div className="bg-white dark:bg-[var(--accent)] rounded-2xl p-4 shadow-lg flex items-center space-x-3 transform -rotate-6 float">
                   <div className="w-10 h-10 bg-[var(--secondary)] rounded-full flex items-center justify-center">
-                    <i className="fas fa-user-shield text-[var(--primary)]"></i>
+                    <i className="fas fa-camera text-[var(--primary)]"></i>
                   </div>
-                  <div className="text-sm font-medium">Private & Secure</div>
+                  <div className="text-sm font-medium">Scan Receipts with OCR</div>
                 </div>
               </div>
 
               <div className="absolute -bottom-10 -right-10 z-30">
                 <div className="bg-white dark:bg-[var(--accent)] rounded-2xl p-4 shadow-lg flex items-center space-x-3 transform rotate-6 float">
                   <div className="w-10 h-10 bg-[var(--secondary)] rounded-full flex items-center justify-center">
-                    <i className="fas fa-share-alt text-[var(--primary)]"></i>
+                    <i className="fas fa-money-bill-wave text-[var(--primary)]"></i>
                   </div>
-                  <div className="text-sm font-medium">Easy Sharing</div>
+                  <div className="text-sm font-medium">Settle via Venmo</div>
                 </div>
               </div>
             </div>

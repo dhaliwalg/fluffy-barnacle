@@ -9,15 +9,20 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Billington - Split the Bill, Keep the Secrets",
+  title: "Billington - Scan. Split. Settle.",
   description:
-    "Billington is an open source bill-splitting app that respects your privacy. No accounts, no cloud storage, just a simple way to divide expenses with friends.",
+    "Billington is an open source bill-splitting app with receipt scanning, group trip tracking, and Venmo integration. No accounts required.",
   keywords: [
     "bill splitting",
+    "receipt scanner",
+    "OCR",
+    "group expenses",
+    "trip splitting",
+    "Venmo",
+    "settle up",
+    "offline",
     "privacy",
     "open source",
-    "no accounts",
-    "expense tracking",
   ],
 };
 

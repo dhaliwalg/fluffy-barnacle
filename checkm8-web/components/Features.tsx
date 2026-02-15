@@ -58,51 +58,67 @@ export default function Features() {
   const features: (FeatureProps & { id: number })[] = [
     {
       id: 1,
-      icon: "fas fa-shield-alt",
-      title: "Your Data Stays Put",
+      icon: "fas fa-camera",
+      title: "Snap Your Receipt",
       description:
-        "Your data never leaves your device. We don't store your information in the cloud, so there's nothing to leak or sell.",
+        "Point your camera at any receipt and Billington auto-fills every item using on-device OCR. No manual entry needed.",
       delay: 0,
     },
     {
       id: 2,
-      icon: "fas fa-user-slash",
-      title: "Skip the Sign-Up",
+      icon: "fas fa-suitcase-rolling",
+      title: "Track Group Trips",
       description:
-        "Use Billington without creating an account. No email, no passwords, no personal data collection.",
+        "Create a tab for your trip, add multiple bills over days, and see running totals per person across all expenses.",
       delay: 1,
     },
     {
       id: 3,
-      icon: "fas fa-calculator",
-      title: "Simple Math That Works",
+      icon: "fas fa-handshake",
+      title: "Settle Up Instantly",
       description:
-        "Split bills proportionally based on what each person ordered, including tax and tip distribution.",
+        "When the trip ends, finalize the tab and see exactly who owes whom. Track paid and unpaid settlements in one place.",
       delay: 2,
     },
     {
       id: 4,
-      icon: "fas fa-share-alt",
-      title: "Easy Sharing",
+      icon: "fas fa-credit-card",
+      title: "Pay via Venmo & Zelle",
       description:
-        "Share bill breakdowns via text message or any messaging app without storing contact information.",
+        "Deep links to Venmo, Zelle, Apple Pay, and Cash App so settling debts is one tap away.",
       delay: 3,
     },
     {
       id: 5,
-      icon: "fas fa-history",
-      title: "Bill History",
+      icon: "fas fa-user-slash",
+      title: "No Sign-Up Needed",
       description:
-        "Review past bills with local storage only. Your history stays on your device and nowhere else.",
+        "Use every feature without creating an account. Friends join group tabs via shared links with anonymous tokens.",
       delay: 4,
     },
     {
       id: 6,
-      icon: "fas fa-moon",
-      title: "Dark Mode Support",
+      icon: "fas fa-link",
+      title: "Share as Web Links",
       description:
-        "Enjoy a beautiful interface that adapts to your system preferences with light and dark themes.",
+        "Generate a web link for any bill or tab. Friends without the app can view the full breakdown in their browser.",
       delay: 5,
+    },
+    {
+      id: 7,
+      icon: "fas fa-shield-alt",
+      title: "Private & Offline-First",
+      description:
+        "All data stored locally on your device. Works without internet. Nothing to hack, nothing to leak.",
+      delay: 6,
+    },
+    {
+      id: 8,
+      icon: "fas fa-code-branch",
+      title: "Fully Open Source",
+      description:
+        "Every line of code is public on GitHub. Verify our privacy claims yourself.",
+      delay: 7,
     },
   ];
 
@@ -115,15 +131,15 @@ export default function Features() {
         <div className="text-center mb-20">
           <p className="text-[var(--primary)] font-medium mb-3">FEATURES</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-[var(--accent)] dark:text-white">
-            Designed with privacy in mind
+            Everything you need to split bills fairly
           </h2>
           <p className="text-[var(--text-secondary)] max-w-2xl mx-auto text-lg">
-            Every feature in Billington was built to protect your privacy while
-            making bill-splitting simple.
+            From scanning receipts to settling group trips, Billington handles
+            the full lifecycle of shared expenses.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature) => (
             <FeatureCard
               key={feature.id}

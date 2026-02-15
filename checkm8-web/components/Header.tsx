@@ -47,11 +47,11 @@ export default function Header() {
           <a href="#features" className="header-link text-sm font-medium">
             Features
           </a>
-          <a href="#privacy" className="header-link text-sm font-medium">
-            Privacy
-          </a>
           <a href="#how-it-works" className="header-link text-sm font-medium">
             How It Works
+          </a>
+          <a href="#privacy" className="header-link text-sm font-medium">
+            Privacy
           </a>
           <a href="#download" className="btn-primary text-xs py-2.5 px-5">
             Download
@@ -81,18 +81,18 @@ export default function Header() {
               Features
             </a>
             <a
-              href="#privacy"
-              onClick={() => setIsMenuOpen(false)}
-              className="text-[var(--accent)] dark:text-white font-medium block py-2"
-            >
-              Privacy
-            </a>
-            <a
               href="#how-it-works"
               onClick={() => setIsMenuOpen(false)}
               className="text-[var(--accent)] dark:text-white font-medium block py-2"
             >
               How It Works
+            </a>
+            <a
+              href="#privacy"
+              onClick={() => setIsMenuOpen(false)}
+              className="text-[var(--accent)] dark:text-white font-medium block py-2"
+            >
+              Privacy
             </a>
             <a
               href="#download"
