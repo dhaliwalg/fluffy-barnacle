@@ -68,7 +68,6 @@ function Step({ number, title, description, icon, delay }: StepProps) {
 export default function HowItWorks() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -92,39 +91,48 @@ export default function HowItWorks() {
   const steps: StepProps[] = [
     {
       number: 1,
-      title: "Select Participants",
+      title: "Scan or Enter",
       description:
-        "Choose who's splitting the bill - no need to create accounts or access your contacts.",
-      icon: "fas fa-users",
+        "Snap a photo of your receipt for instant OCR, or enter items manually.",
+      icon: "fas fa-camera",
       delay: 1,
-      imageSrc: "/add.png",
+      imageSrc: "/bill.png",
     },
     {
       number: 2,
-      title: "Enter Bill Details",
+      title: "Add Your Group",
       description:
-        "Add items, subtotal, tax, and tip. Customize to match your receipt exactly.",
-      icon: "fas fa-receipt",
+        "Select who's at the table. No accounts needed.",
+      icon: "fas fa-users",
       delay: 2,
-      imageSrc: "/bill.png",
+      imageSrc: "/add.png",
     },
     {
       number: 3,
       title: "Assign Items",
       description:
-        "Easily assign items to people with flexible splitting options for shared items.",
+        "Tap to assign items to people. Split shared dishes automatically.",
       icon: "fas fa-tasks",
       delay: 3,
       imageSrc: "/assign.png",
     },
     {
       number: 4,
-      title: "Share Results",
+      title: "Share & Settle",
       description:
-        "Get a clean breakdown of who owes what and share it directly with your friends.",
+        "Send the breakdown via text or web link. Settle up through Venmo or Zelle.",
       icon: "fas fa-share-alt",
       delay: 4,
       imageSrc: "/summary.png",
+    },
+    {
+      number: 5,
+      title: "Track It in a Tab",
+      description:
+        "Add bills to a shared online tab for group trips. See running totals and settle up when the trip ends.",
+      icon: "fas fa-folder-open",
+      delay: 5,
+      imageSrc: "/tab.png",
     },
   ];
 
@@ -151,20 +159,18 @@ export default function HowItWorks() {
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Split bills in four
-              <br />
-              simple steps
+              See how it works
             </h2>
 
             <p
-              className={`text-[var(--text-secondary)] mb-12 text-lg transition-all duration-700 delay-100 ${
+              className={`text-[var(--text-secondary)] mb-8 text-lg transition-all duration-700 delay-100 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-12"
               }`}
             >
-              Billington makes it easy to divide expenses fairly, with a simple
-              four-step process that respects your privacy at every stage.
+              Split any bill with friends in seconds — from a single dinner to
+              an entire trip.
             </p>
 
             <div className="space-y-10">
