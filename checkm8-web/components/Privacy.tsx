@@ -53,9 +53,7 @@ export default function Privacy() {
                 : "opacity-0 translate-y-12"
             }`}
           >
-            Privacy, With the Details,
-            <br />
-            Made Clear
+            Privacy Made Clear
           </h2>
           <p
             className={`text-white/80 max-w-2xl mx-auto text-lg mb-12 transition-all duration-700 delay-100 ${
