@@ -105,7 +105,7 @@ export default function Hero() {
                   <i className="fas fa-shield-alt text-[var(--primary)]"></i>
                 </div>
                 <span className="text-sm font-medium text-[var(--accent)] dark:text-white">
-                  100% Private
+                  No Account Required
                 </span>
               </div>
             </div>

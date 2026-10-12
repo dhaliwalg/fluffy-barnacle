@@ -61,7 +61,7 @@ export default function Features() {
       icon: "fas fa-camera",
       title: "Snap Your Receipt",
       description:
-        "Point your camera at any receipt and Billington auto-fills every item using on-device OCR. No manual entry needed.",
+        "Choose a receipt image and Billington sends it to our service and Anthropic to extract items and amounts. You can also enter items yourself.",
       delay: 0,
     },
     {
@@ -107,9 +107,9 @@ export default function Features() {
     {
       id: 7,
       icon: "fas fa-shield-alt",
-      title: "Private & Offline-First",
+      title: "Account-Free, with Sharing",
       description:
-        "All data stored locally on your device. Works without internet. Nothing to hack, nothing to leak.",
+        "Your history and preferences stay on your device. Bills and tabs you share are stored online so friends can open them by link.",
       delay: 6,
     },
     {

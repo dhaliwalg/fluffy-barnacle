@@ -28,10 +28,10 @@ export default function Privacy() {
   }, []);
 
   const guarantees = [
-    { text: "No Data Collection", icon: "fa-ban" },
-    { text: "Your Data Stays Put", icon: "fa-cloud" },
     { text: "No Account Required", icon: "fa-user-slash" },
-    { text: "No Tracking", icon: "fa-location-dot" },
+    { text: "Shared Bills Stored Online", icon: "fa-cloud" },
+    { text: "Local App History", icon: "fa-mobile-screen" },
+    { text: "Receipt Scans Use Anthropic", icon: "fa-camera" },
   ];
 
   return (
@@ -53,9 +53,9 @@ export default function Privacy() {
                 : "opacity-0 translate-y-12"
             }`}
           >
-            Privacy: A Core Value,
+            Privacy, With the Details,
             <br />
-            Not a Feature
+            Made Clear
           </h2>
           <p
             className={`text-white/80 max-w-2xl mx-auto text-lg mb-12 transition-all duration-700 delay-100 ${
@@ -64,10 +64,10 @@ export default function Privacy() {
                 : "opacity-0 translate-y-12"
             }`}
           >
-            Unlike most apps that require you to create an account and upload
-            your data to their servers, Billington works entirely on your
-            device. Your bill information, contacts, and history never leave
-            your phone.
+            Billington needs no account. Your app history and preferences stay
+            on your device, while bills and tabs you choose to share are stored
+            online. Optional receipt scanning sends the image to our service
+            and Anthropic for extraction.
           </p>
 
           <div
