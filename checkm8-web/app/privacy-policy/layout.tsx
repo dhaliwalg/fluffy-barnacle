@@ -3,18 +3,16 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy - Billington",
   description:
-    "Billington's privacy policy: We collect zero data. Your bill-splitting information stays completely private on your device with no cloud storage or tracking.",
+    "Learn what Billington stores locally, what is shared online, and how receipt scanning and service providers process information.",
   keywords: [
     "privacy policy",
     "data protection",
-    "no data collection",
-    "private bill splitting",
-    "GDPR compliant",
+    "bill splitting privacy",
   ],
   openGraph: {
     title: "Privacy Policy - Billington",
     description:
-      "Zero data collection. Complete privacy. Learn about Billington's privacy-first approach to bill splitting.",
+      "How Billington handles local data, shared bills, receipt scans, and service providers.",
     type: "website",
   },
 };

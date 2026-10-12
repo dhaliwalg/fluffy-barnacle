@@ -169,7 +169,7 @@ export default function Download() {
             >
               <i className="fas fa-lock mr-2"></i>
               <span>
-                Your privacy is guaranteed - no data leaves your device
+                Shared bills are stored online. Review our privacy policy for details.
               </span>
             </div>
           </div>
